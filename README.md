@@ -1,22 +1,30 @@
-# Odd or Even
+### Odd or Even Tests HTML
 
-In this activity, you will write code to create a function that determines whether a number is odd or even.
+This HTML file sets up a testing environment for determining if numbers are odd or even using Mocha and Chai.
 
-## Instructions
+- **Meta Tags:** Define character encoding, viewport settings, and compatibility with IE.
+- **Title:** Sets the document title to "Odd or Even Tests".
+- **Styles and Scripts:**
+  - **Mocha CSS:** Styles the test results output.
+  - **Mocha JS:** Loads the Mocha testing framework.
+  - **Chai JS:** Loads the Chai assertion library.
+- **Body:**
+  - **Mocha Div:** Container for displaying test results.
+  - **Mocha Setup:** Configures Mocha to use the BDD interface.
+  - **Script Loading:**
+    - `odd-or-even.js`: Contains functions to determine if numbers are odd or even.
+    - `odd-or-even.test.js`: Contains tests for the odd-or-even functions.
+  - **Mocha Run:** Executes the Mocha tests.
 
-* Open [Unsolved/odd-or-even.js](Unsolved/odd-or-even.js) in your code editor; this is the only file you will modify in this activity.
+This setup ensures a comprehensive and functional test environment for the odd-or-even functions.
 
-  * In this file, you will write code in the body of the `oddOrEven` function to achieve the following:
+### Odd or Even Function
 
-    * If `num` is evenly divisible by 2, return the string `"even"`.
+This JavaScript function determines if a given number is odd or even:
 
-    * If `num` is not evenly divisible by 2, return the string `"odd"`.
+- **oddOrEven(num):** 
+  - Takes a single argument `num`.
+  - Returns `"even"` if `num` is divisible by 2.
+  - Returns `"odd"` if `num` is not divisible by 2.
 
-* You can check whether your function works properly by opening [Unsolved/test.html](Unsolved/test.html) in your web browser.
-
-  * Functions that pass the tests will be denoted with a green check mark.
-
-  * Functions that fail the tests will be denoted with a red x and an error message.
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+This function uses the modulus operator `%` to check the divisibility of the number by 2 and returns the appropriate string based on the result.
